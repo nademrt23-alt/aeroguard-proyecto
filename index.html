@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="bg"></div><div id="grid"></div><div id="bar"></div>
-<header><div class="nv"><div class="lg">🛸 AeroGuard</div><nav class="nl"><a href="#problema">Problema</a><a href="#ambiente">Ambiente</a><a href="#salud">Salud</a><a href="#deteccion">Detección</a><a href="#modelos">Modelos</a><a href="#hoja">Hoja de ruta</a><a href="#arquitectura">Sistema</a><a href="#roles">Roles</a><a href="#componentes">Componentes</a><a href="#autonomia">Autonomía</a><a href="#metodologia">Metodología</a><a href="#seguridad">Seguridad</a></nav></div></header>
+<header><div class="nv"><div class="lg">🛸 AeroGuard</div><nav class="nl"><a href="#problema">Problema</a><a href="#ambiente">Ambiente</a><a href="#salud">Salud</a><a href="#deteccion">Detección</a><a href="#modelos">Modelos</a><a href="#hoja">Hoja de ruta</a><a href="#arquitectura">Sistema</a><a href="#pruebas">Pruebas</a><a href="#presupuesto">Presupuesto</a><a href="#roles">Roles</a><a href="#componentes">Componentes</a><a href="#autonomia">Autonomía</a><a href="#metodologia">Metodología</a><a href="#seguridad">Seguridad</a></nav></div></header>
 <div class="hero">
 <div><span class="tag">● Proyecto STEAM · Fase de diseño</span>
 <h1>Dron autónomo para <span class="grad">identificar agua estancada</span> y medir partículas en suspensión</h1>
@@ -67,7 +67,26 @@
 </div>
 <div class="note"><b>Nota:</b> en la versión Eco, el análisis de IA se realizará principalmente en tierra; en la versión Pro se contempla analizar a bordo.</div>
 </section>
-<section id="roles" class="rv lf"><div class="k">08 · Equipo</div><h2>Roles del equipo: 5 integrantes</h2>
+<section id="pruebas" class="rv lf"><div class="k">08 · Pruebas</div><h2>Plan de pruebas futuras</h2><p class="lead">Antes de cualquier uso en comunidad, el dron pasará por pruebas progresivas y controladas.</p>
+<div class="tbl"><table><tr><th>Etapa</th><th>Qué se probará</th><th>Criterio de éxito</th></tr>
+<tr><td>Banco de pruebas</td><td>Motores, sensores, cámara y telemetría</td><td>Todos los componentes responden correctamente</td></tr>
+<tr><td>Vuelo corto</td><td>Estabilidad, despegue y aterrizaje</td><td>Vuelo controlado sin incidentes</td></tr>
+<tr><td>Ruta GPS</td><td>Seguimiento de waypoints</td><td>Completa la ruta y regresa al punto inicial</td></tr>
+<tr><td>Captura de imágenes</td><td>Calidad y georreferenciación</td><td>Imágenes útiles con ubicación registrada</td></tr>
+<tr><td>Detección con IA</td><td>Identificación de agua estancada</td><td>Resultados comparables con verificación en campo</td></tr>
+<tr><td>Autonomía</td><td>Duración real de batería</td><td>Dentro del rango estimado para la versión</td></tr>
+</table></div></section>
+<section id="presupuesto" class="rv rt"><div class="k">09 · Presupuesto</div><h2>Presupuesto estimado</h2><p class="lead">Montos referenciales para planificación; pueden variar según proveedor, impuestos y disponibilidad.</p>
+<div class="tbl"><table><tr><th>Rubro</th><th>Versión Eco</th><th>Versión Pro</th></tr>
+<tr><td>Controlador y GPS</td><td>S/ 150 – 300</td><td>S/ 900 – 1,600</td></tr>
+<tr><td>Motores, hélices y ESC</td><td>S/ 200 – 350</td><td>S/ 500 – 900</td></tr>
+<tr><td>Cámara y computadora</td><td>S/ 100 – 250</td><td>S/ 800 – 1,800</td></tr>
+<tr><td>Sensores ambientales</td><td>S/ 120 – 250</td><td>S/ 400 – 900</td></tr>
+<tr><td>Baterías y cargador</td><td>S/ 100 – 200</td><td>S/ 300 – 600</td></tr>
+<tr><td>Estructura y repuestos</td><td>S/ 80 – 200</td><td>S/ 300 – 700</td></tr>
+<tr><td><b>Total estimado</b></td><td><b>S/ 700 – 1,300</b></td><td><b>S/ 3,500 o más</b></td></tr>
+</table></div></section>
+<section id="roles" class="rv lf"><div class="k">10 · Equipo</div><h2>Roles del equipo: 5 integrantes</h2>
 <div class="grid g3">
 <div class="card"><h3><span class="ic ic-c">🧭</span>Líder de proyecto</h3><p>Organiza al equipo y coordina la presentación.</p></div>
 <div class="card"><h3><span class="ic ic-g">🔧</span>Ingeniero de hardware</h3><p>Arma el dron e instala componentes.</p></div>
@@ -75,12 +94,12 @@
 <div class="card"><h3><span class="ic ic-a">🤖</span>Especialista en IA</h3><p>Entrena el modelo y analiza resultados.</p></div>
 <div class="card"><h3><span class="ic ic-r">📊</span>Investigador ambiental</h3><p>Estudia la contaminación y valida zonas.</p></div>
 </div></section>
-<section id="componentes" class="rv rt"><div class="k">09 · Hardware</div><h2>Componentes del dron</h2>
+<section id="componentes" class="rv rt"><div class="k">11 · Hardware</div><h2>Componentes del dron</h2>
 <div class="tbs"><button class="tb on" onclick="tab(event,'t-eco')">Versión económica</button><button class="tb" onclick="tab(event,'t-pro')">Versión profesional</button></div>
 <div id="t-eco" class="tcc on"><div class="tbl"><table><tr><th>Componente</th><th>Ejemplo</th><th>Función</th></tr><tr><td>Controlador</td><td>ESP32 + controlador básico</td><td>Cerebro del dron</td></tr><tr><td>GPS</td><td>NEO-6M/7M</td><td>Rutas automáticas</td></tr><tr><td>Cámara</td><td>ESP32-CAM</td><td>Fotos y videos</td></tr><tr><td>IA</td><td>Raspberry Pi Zero 2 W</td><td>Análisis de imágenes</td></tr><tr><td>Sensores</td><td>PMS5003 + DHT22</td><td>Partículas y clima</td></tr><tr><td>Motores</td><td>4 brushless</td><td>Empuje</td></tr><tr><td>Batería</td><td>LiPo 3S</td><td>Energía</td></tr></table></div></div>
 <div id="t-pro" class="tcc"><div class="tbl"><table><tr><th>Componente</th><th>Ejemplo</th><th>Función</th></tr><tr><td>Controlador</td><td>Pixhawk 6C / Cube Orange</td><td>Control profesional</td></tr><tr><td>Computadora</td><td>Raspberry Pi 5 / Jetson Nano</td><td>IA en vuelo</td></tr><tr><td>Cámaras</td><td>RGB + térmica</td><td>Análisis avanzado</td></tr><tr><td>GPS</td><td>RTK</td><td>Máxima precisión</td></tr><tr><td>Sensores</td><td>Partículas, gases, meteorología</td><td>Datos completos</td></tr><tr><td>Comunicación</td><td>Telemetría + 4G/LTE</td><td>Datos en tiempo real</td></tr></table></div></div>
 </section>
-<section id="autonomia" class="rv lf"><div class="k">10 · Autonomía</div><h2>¿Cómo vuela solo el dron?</h2>
+<section id="autonomia" class="rv lf"><div class="k">12 · Autonomía</div><h2>¿Cómo vuela solo el dron?</h2>
 <div class="tl">
 <div class="ti"><h3>1. Planificación</h3><p>Se marcan puntos GPS en el mapa.</p></div>
 <div class="ti"><h3>2. Revisión previa</h3><p>Batería, hélices, GPS, cámara y clima.</p></div>
@@ -90,7 +109,7 @@
 <div class="ti"><h3>6. Alertas</h3><p>Guarda ubicación y foto de zonas sospechosas.</p></div>
 <div class="ti"><h3>7. Retorno</h3><p>Regresa solo al final o si la batería baja.</p></div>
 </div></section>
-<section id="metodologia" class="rv rt"><div class="k">11 · Metodología</div><h2>¿Cómo trabajaremos?</h2>
+<section id="metodologia" class="rv rt"><div class="k">13 · Metodología</div><h2>¿Cómo trabajaremos?</h2>
 <div class="grid g4">
 <div class="card"><h3><span class="ic ic-c">🔎</span>Investigar</h3><p>Estudiar la contaminación y proyectos similares.</p></div>
 <div class="card"><h3><span class="ic ic-c">✏️</span>Diseñar</h3><p>Planos, componentes, peso y batería.</p></div>
@@ -101,12 +120,12 @@
 <div class="card"><h3><span class="ic ic-c">📢</span>Comunicar</h3><p>Informes, videos y presentación.</p></div>
 <div class="card"><h3><span class="ic ic-c">🌍</span>Aplicar</h3><p>Proponer su uso en la comunidad.</p></div>
 </div></section>
-<section id="seguridad" class="rv lf"><div class="k">12 · Seguridad</div><h2>Uso responsable y ético</h2>
+<section id="seguridad" class="rv lf"><div class="k">14 · Seguridad</div><h2>Uso responsable y ético</h2>
 <div class="grid g2">
 <div class="card"><h3><span class="ic ic-r">🛡️</span>Seguridad física</h3><ul><li>No volar cerca de personas, animales o cables.</li><li>Revisar el dron antes de cada vuelo.</li><li>Mantener control manual disponible.</li></ul></div>
 <div class="card"><h3><span class="ic ic-r">⚖️</span>Normas y privacidad</h3><ul><li>Respetar normas locales de drones.</li><li>No grabar personas sin autorización.</li><li>Volar en zonas autorizadas.</li></ul></div>
 </div></section>
-<section id="conclusion" class="rv sc"><div class="k">13 · Conclusión</div><h2>Conclusión</h2>
+<section id="conclusion" class="rv sc"><div class="k">15 · Conclusión</div><h2>Conclusión</h2>
 <div class="card"><p>AeroGuard está diseñado para ayudar a identificar posibles zonas de agua estancada y medir partículas en suspensión, apoyando la prevención de enfermedades sin reemplazar análisis profesionales.</p></div></section>
 <footer><b>AeroGuard</b> · Proyecto STEAM · Chiclayo, Lambayeque</footer>
 <script src="script.js"></script>
