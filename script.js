@@ -1,1 +1,1 @@
-Añadir parallax, staggered reveal y partículas flotantes.
+Añadir contadores animados, scroll-driven demo y soporte prefers-reduced-motion.
