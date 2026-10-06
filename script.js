@@ -1,1 +1,1 @@
-Añadir la función toggleFaq al JavaScript actual.
+Añadir parallax, staggered reveal y partículas flotantes.
