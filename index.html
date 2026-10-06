@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AeroGuard · Proyecto STEAM</title>
+<style>
+:root{--bg:#060b16;--card:#0d1526;--line:#1e2c47;--txt:#e8eefc;--muted:#93a5c4;--cyan:#22d3ee;--mint:#34d399;--violet:#a78bfa;--amber:#fbbf24}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.7}
+header{padding:18px 28px;border-bottom:1px solid var(--line);font-weight:800;background:linear-gradient(90deg,var(--cyan),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{max-width:1100px;margin:auto;padding:90px 28px}
+.tag{display:inline-block;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.3);color:var(--cyan);padding:8px 18px;border-radius:99px;font-size:.78rem;font-weight:700;margin-bottom:20px}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.1;letter-spacing:-2px}
+.grad{background:linear-gradient(90deg,var(--cyan),var(--mint));-webkit-background-clip:text;background-clip:text;color:transparent}
+p{color:var(--muted);margin-top:18px;max-width:640px}
+section{max-width:1100px;margin:auto;padding:70px 28px}
+h2{font-size:1.8rem;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--cyan)}
+.card h3{font-size:1.05rem;margin-bottom:8px}.card p{font-size:.92rem;margin:0}
+footer{border-top:1px solid var(--line);text-align:center;padding:40px;color:var(--muted);font-size:.9rem}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>🛸 AeroGuard</header>
+<div class="hero">
+<span class="tag">● Proyecto STEAM · Fase de diseño</span>
+<h1>Dron autónomo para <span class="grad">identificar agua estancada</span> y medir partículas en suspensión</h1>
+<p>AeroGuard es un proyecto en desarrollo que busca apoyar la identificación temprana de posibles zonas de agua estancada y el monitoreo de PM1.0, PM2.5 y PM10.</p>
+</div>
+<section>
+<h2>El problema</h2>
+<p>En algunas zonas, el agua se acumula y puede convertirse en criadero de mosquitos. AeroGuard busca ayudar a identificar esas zonas para su verificación en campo.</p>
+<div class="grid">
+<div class="card"><h3>⚠️ Agua estancada</h3><p>Puede favorecer criaderos de mosquitos y riesgos sanitarios.</p></div>
+<div class="card"><h3>🌫️ Partículas</h3><p>PM1.0, PM2.5 y PM10 como indicador de calidad del aire.</p></div>
+<div class="card"><h3>📍 Zonas de difícil acceso</h3><p>Un dron puede sobrevolar áreas amplias sin exponer a personas.</p></div>
+</div>
+</section>
+<footer>AeroGuard · Proyecto STEAM · Chiclayo, Lambayeque</footer>
+</body>
+</html>
